@@ -64,11 +64,22 @@ h2{
     height: 50px;
     border: none;
 }
+
 /* cambia de color cuando paso el mouse por el boton */
 .boton-contacto:hover{
     background-color: var(--color-botonseleccionar);
 }
+
 /* cambia de color cuando presiono el color */
 .boton-contacto:active{
     background-color: var(--color-botonpresionar) ;
+}
+
+footer{
+    text-align: center;
+}
+
+.author{
+    font-size: bold;
+    color: var(--color-subtitulos);
 }
