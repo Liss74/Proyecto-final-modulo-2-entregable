@@ -55,6 +55,14 @@ h2{
     font-weight: bold;
 }
 
+.parrafo{
+    text-align: center;
+}
+
+figure{
+    text-align: center;
+}
+
 .lista-radio{
     accent-color: var(--color-subtitulos);
     cursor: pointer;
