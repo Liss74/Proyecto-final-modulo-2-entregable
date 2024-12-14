@@ -1,3 +1,74 @@
+:root {
+    --color-letraheader: #2F3645;
+    --color-background: #e0dccf;
+    --color-texto: #333; 
+    --color-bordes:  #ddd ;
+    --color-section: #fff;
+    --color-subtitulos: #257180;
+    --color-boton: #8ABFA3; 
+    --color-botonseleccionar: #238dff; 
+    --color-botonpresionar: #000 ;
+}
+
 body{
-    background-color: aqua;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0px;
+    background-color: var(--color-background);
+    color: var(--color-texto);
+}
+
+header{
+    background: linear-gradient(var(--color-subtitulos), #F2E5BF);
+    text-align: center;
+    color: var(--color-letraheader);
+    padding: 20px;
+}
+
+.menu{
+    list-style: none;
+}
+
+.enlace{
+    text-decoration: none;
+    color: var(--color-letraheader);
+    font-weight: bold;
+}
+
+.enlace:hover{
+    color: var(--color-botonseleccionar);
+    text-decoration: underline;
+}
+
+section{
+    border: 1 solid var(--color-bordes);
+    border-radius: 20px;
+    background-color: var(--color-section);
+    padding: 15px;
+    margin: 30px;
+
+}
+
+h2{
+    font-size: 20px;
+    color: var(--color-subtitulos);
+    font-weight: bold;
+}
+
+
+
+.boton-contacto{
+    background-color: var(--color-boton);
+    color: var(--color-section);
+    width: 100px;
+    height: 50px;
+    border: none;
+}
+/* cambia de color cuando paso el mouse por el boton */
+.boton-contacto:hover{
+    background-color: var(--color-botonseleccionar);
+}
+/* cambia de color cuando presiono el color */
+.boton-contacto:active{
+    background-color: var(--color-botonpresionar) ;
 }
