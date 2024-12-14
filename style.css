@@ -50,9 +50,10 @@ section{
 }
 
 h2{
-    font-size: 20px;
+    font-size: 25px;
     color: var(--color-subtitulos);
     font-weight: bold;
+    text-align: center;
 }
 
 .parrafo{
