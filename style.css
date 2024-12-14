@@ -55,6 +55,11 @@ h2{
     font-weight: bold;
 }
 
+.lista-radio{
+    accent-color: var(--color-subtitulos);
+    cursor: pointer;
+    margin-right: 20px;
+}
 
 
 .boton-contacto{
