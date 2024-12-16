@@ -87,6 +87,10 @@ figure{
     margin: 20px;
 }
 
+.img-prepa1 img{
+    box-sizing: 300px;
+}
+
 .img-lic img{
     border-style: double;
     border-radius: 25%;
@@ -150,13 +154,13 @@ form{
 
 .carta{
     background-color: var(--color-section);
-    border-radius: 10PX;
+    border-radius: 20PX;
     overflow: hidden;
 }
 
 .contenedor-imagen{
     width: 100%;
-    height: 400PX;
+    height: 200px;
     overflow: hidden;
     position: relative;
     background-color: #333;
@@ -168,7 +172,7 @@ form{
     left: 0;
     background-color: var(--color-sombra);
     width: 100%;
-    height: 400px;
+    height: 200px;
     font-size: 25px;
     color: var(--color-subtitulos);
     display: flex;
@@ -186,4 +190,18 @@ form{
 }
 .contenedor-imagen:hover .sombra{
     opacity: 1;
+}
+
+@media screen and (min-width:440px){
+    .contenedor-cartas{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:40px) and (max-width: 395px) {
+    .menu{
+        flex-direction: column;
+    }
 }
