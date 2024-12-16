@@ -8,11 +8,13 @@
     --color-boton: #8ABFA3; 
     --color-botonseleccionar: #238dff; 
     --color-botonpresionar: #000 ;
+    --color-sombra: rgba(0,0,0,0.5)
 }
 
 *{
     margin: 0;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -21,6 +23,7 @@ body{
     color: var(--color-texto);
     transition: background-color 0.3s, color 0.3s;
     line-height: 1.5;
+    
 }
 
 header{
@@ -135,3 +138,52 @@ form{
     margin: 0 auto;
 }
 
+/* SE APLICARÁ FUNCIÓN DE CARTAS */
+
+.contenedor-cartas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.carta{
+    background-color: var(--color-section);
+    border-radius: 10PX;
+    overflow: hidden;
+}
+
+.contenedor-imagen{
+    width: 100%;
+    height: 400PX;
+    overflow: hidden;
+    position: relative;
+    background-color: #333;
+}
+
+.sombra{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-sombra);
+    width: 100%;
+    height: 400px;
+    font-size: 25px;
+    color: var(--color-subtitulos);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.contenedor-imagen img{
+    border-radius: 10px;
+    width: 100%;
+    
+}
+.contenedor-imagen:hover .sombra{
+    opacity: 1;
+}
