@@ -20,6 +20,7 @@ body{
     background-color: var(--color-background);
     color: var(--color-texto);
     transition: background-color 0.3s, color 0.3s;
+    line-height: 1.5;
 }
 
 header{
@@ -71,6 +72,22 @@ h2{
 
 figure{
     text-align: center;
+}
+
+.img-secu img{
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.img-prepa img{
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.img-lic img{
+    border-style: double;
+    border-radius: 25%;
+    margin: 20px;
 }
 
 .lista-radio{
